@@ -23,4 +23,14 @@ public class PaymentTest {
         customerPayment.setCardType("Master");
         assertEquals("Master", customerPayment.getCustomerPayment());
     }
+    public void testThatSystemCanAcceptCVV(){
+        Payment customerPayment = new Payment();
+        customerPayment.setCVV(345);
+        assertEquals(345, customerPayment.getcvv());
+    }
+//    public void testThatSystemCanAcceptExpirationDate(){
+//        Payment customerPayment = new Payment();
+//        customerPayment.setExpirationDate()
+//    }
+
 }
